@@ -8,7 +8,8 @@ public class DBConnector {
 	private static String url = "jdbc:mysql://localhost/logindb_hamasaki";
 	private static String user = "root";
 	private static String password = "root";
-	private Connection con = null;
+	public Connection getConnection() {
+	Connection con = null;
 	
 	try {
 		

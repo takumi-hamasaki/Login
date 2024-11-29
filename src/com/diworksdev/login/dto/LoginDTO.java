@@ -18,7 +18,7 @@ public class LoginDTO {
 		return name;
 	}
 	
-	public void setname(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 	
