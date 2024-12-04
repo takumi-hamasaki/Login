@@ -8,15 +8,15 @@ public class LoginAction extends ActionSupport {
 	
 	private String name;
 	private String password;
-	public String execute () throws SQLException {
+	public String execute() throws SQLException {
 		String ret = ERROR;
 		
 		LoginDAO dao = new LoginDAO();
 		LoginDTO dto = new LoginDTO();
 		
-		dto = dao.select(name, password);
+		dto = dao.select(name,password);
 		
-		if(name.equals(dto.dtoName())) {
+		if(name.equals(dto.getName())) {
 			if(password.equals(dto.getPassword())) {
 				ret = SUCCESS;
 			}
